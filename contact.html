@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Kontakt</title>
+</head>
+<body id="pocetna">
+<header>
+    <div class="nav-meni">
+        <div>
+            <img id="nav-logo" src="slike/logo.jpg">      
+        </div>
+        <ul class="nav-lista">
+            <li class="lista-itemi"><a id="link1" href="index.html" onmouseover="promeniBoju(1, 'blue');" onmouseout="promeniBoju(1, '');">O nama</a></li>
+            <li class="lista-itemi"><a id="link2" href="proizvodi.html" onmouseover="promeniBoju(2, 'blue');" onmouseout="promeniBoju(2, '');">Proizvodi</a></li>
+            <li class="lista-itemi"><a id="link3" href="contact.html" onmouseover="promeniBoju(3, 'blue');" onmouseout="promeniBoju(3, '');">Kontakt</a></li> 
+            <li class="lista-itemi"><a id="link5" href="cene.html" onmouseover="promeniBoju(5, 'blue');" onmouseout="promeniBoju(5, '');">Cene</a></li>        
+          </ul>
+        </div>
+</header>
+  <div class="kontakt-forma">
+    <form id="forma-provera" onsubmit="proveriFormu(); return false;">
+        <div class="forma-sekcije">
+            <label for="" class="forma-opis">Ime</label>
+            <input type="text" id="ime1" class="forma-unos podaci" maxlength="25" tabindex="1" placeholder="Unesite vaše ime">
+        </div>
+        <div class="forma-sekcije">
+            <label for="" class="forma-opis">Prezime</label>
+            <input type="text" id="prezime1" class="forma-unos podaci" maxlength="25" tabindex="2" placeholder="Unesite vaše prezime">
+        </div>
+        <div class="forma-sekcije">
+            <label for="" class="forma-opis">Broj telefona</label>
+            <input type="text" id="telefon1" class="forma-unos podaci" maxlength="25" tabindex="3" placeholder="Unesite vaš broj telefona">
+        </div>
+        <div class="forma-sekcije">
+            <label for="" class="forma-opis">Email adresa</label>
+            <input type="text" id="email1" class="forma-unos podaci" maxlength="25" tabindex="4" placeholder="Unesite vaš email">
+        </div>
+        <div class="forma-sekcije">
+            <label for="" class="forma-opis">Poruka</label>
+            <textarea id="poruka1" onclick="obrisiPoruku()" cols="25" rows="14" class="forma-unos poruka">Unesite vasu poruku...</textarea>
+        </div>
+        <div class="forma-sekcije">
+            <button id="dugme1" onmouseover="promeniBoju(4, 'black')"  onmouseout="promeniBoju(4, '');"type="submit" class="forma-dugme">Pošalji</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

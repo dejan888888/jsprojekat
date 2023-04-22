@@ -1,0 +1,303 @@
+*{  
+    padding: 0;
+    margin: 0;
+}
+
+.nav-meni {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 18px;   
+}
+
+.nav-lista {
+    list-style: none;
+}
+
+.lista-itemi {   
+    display: inline-block; 
+   padding: 22px 120px;
+}
+
+.nav-lista a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    padding: 8px;
+}
+
+/*.nav-meni a:hover{
+    color: blue;    
+}*/
+
+#nav-logo {
+    height: 70px;
+    padding-right: 100px;
+    padding-top: 3px;
+    animation: rotation 2s ease-in;
+    animation-name: rotiranje-logo; 
+}
+
+@keyframes rotiranje-logo {
+    from 
+    {
+      transform: rotate(180deg);
+    }
+    to 
+    {
+      transform: rotate(0deg);
+    }
+}
+
+body#pocetna {
+    background-image: url("slike/pozadina1.jpg");   
+    background-size: cover;
+}
+
+.pocetna-sekcije{
+    padding-top: 8%;
+    width: 100%;
+    height: auto;
+    align-items: center;       
+}
+
+.gornja-sekcija{
+    width: 55%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.gornja-sekcija p {
+    font-size: 23px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 13px; 
+}
+
+.donja-sekcija{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;   
+}
+
+.pocetna-slika1{
+    width: 35%;
+    height: 100%; 
+     
+}
+
+.pocetna-slika1 img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.pocetna-slika2{
+    width: 35%;
+    height: 100%;
+    padding-left: 13%;
+}
+
+.pocetna-slika2 img {
+    width: 100%;
+    height: 100%;   
+}
+
+.proizvodi-sekcija{
+   display: flex; 
+   justify-content: center;
+   margin-top: 8%;   
+}
+
+.sekcije {
+    background-color: black;
+    width: 375px;
+    height: 565px;
+    margin: 20px; 
+    border-radius: 17px;    
+}
+
+.slike-sekcija {
+    height: 200px;
+    margin-bottom: 20px;
+    background-size: cover;
+    border-radius: 17px 17px 0px 0px ;
+}
+
+.slika-1 {
+    background-image: url("slike/win10.jpg");  
+}
+
+.slika-2 {
+    background-image: url("slike/windows-11.jpg");
+}
+
+.slika-3 {
+    background-image: url("slike/office2019.jpg");
+}
+
+.sekcije h2{
+    padding: 12px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.sekcije p {
+    padding: 12px;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.kontakt-forma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin-top: 7%;   
+}
+
+.forma-sekcije {
+    margin-bottom: 14px;
+}
+
+.forma-opis{
+    display: block;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    font-size: 20px;
+    color: #fff;  
+}
+
+.forma-unos {
+    border: 1px solid #1F75FE;
+    width: 330px;
+    height: 55px;
+    padding-left: 8px;
+    margin: 3px;
+    background-color: #1F75FE; 
+    transition: 0.2s ease;   
+}
+
+::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.podaci {
+    border-radius: 17px;
+}
+
+.poruka {
+    border-radius: 7px 7px 0px 0px;
+    height: 100px;
+    padding-top: 2px;
+    color: #fff; 
+    font-size: 15px;
+}
+
+.forma-dugme {
+    color: #fff;
+    background-color: #1F75FE;
+    border: 1px solid #1F75FE;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    transition: 0.2 ease;
+}
+.tabela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    flex-direction: column;
+}
+@media screen and (max-width:800px) {
+
+    .nav-meni{    
+        height: 170px;   
+    }
+
+    .nav-meni a{
+        font-size: 15px;
+    }
+
+    .lista-itemi{
+        display: block;
+        padding: 17px;    
+    }
+
+    #nav-logo{
+        display: none;
+    }
+
+    .pocetna-sekcije{
+        height: 400px;
+        width: 100%;  
+    }
+
+    .gornja-sekcija {
+        width: auto;
+        height: 200px;
+    }
+
+    .gornja-sekcija p{
+        font-size: 17px;
+    }
+
+    .donja-sekcija {
+        margin-top: 1%;
+        height: 180px;
+        width: 100%;   
+    }
+
+    .proizvodi-sekcija{
+        display: block;
+    }
+
+    .sekcije{
+        width: 300px;
+        height: 490px;
+        margin: 20px auto;
+    }
+
+    .slike-sekcija{
+        height: 150px;
+    }
+
+    .sekcije p{
+        font-size: 16px;
+    }
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
